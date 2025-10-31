@@ -1,26 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sip N Chat Café</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sip N Chat Café | Okara Cantt</title>
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       background-color: #faf8f5;
-      text-align: center;
-      margin: 0;
-      padding: 50px;
+      color: #333;
     }
-    h1 {
+    header {
+      background-color: #b35c00;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #b35c00;
+      margin-bottom: 20px;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .item {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .item h3 {
+      margin-bottom: 10px;
       color: #b35c00;
     }
-    p {
-      color: #444;
+    .hours, .location {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+    footer {
+      background-color: #b35c00;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Sip N Chat Café ☕</h1>
-  <p>This is our official website hosted on GitHub Pages.</p>
-  <p>More updates coming soon!</p>
+  <header>
+    <h1>Sip N Chat Café</h1>
+    <p>Okara Cantt • Fresh Brews • Cozy Vibes ☕</p>
+  </header>
+
+  <section>
+    <h2>Our Menu</h2>
+    <div class="menu">
+      <div class="item">
+        <h3>Hot Coffee</h3>
+        <p>Espresso, Cappuccino, Latte, Mocha</p>
+      </div>
+      <div class="item">
+        <h3>Cold Beverages</h3>
+        <p>Iced Latte, Cold Coffee, Milkshakes, Mojitos</p>
+      </div>
+      <div class="item">
+        <h3>Snacks</h3>
+        <p>Sandwiches, Burgers, Fries, Brownies</p>
+      </div>
+      <div class="item">
+        <h3>Desserts</h3>
+        <p>Waffles, Ice Cream, Chocolate Lava Cake</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hours">
+    <h2>Opening Hours</h2>
+    <p>Mon – Fri: 12 PM – 11 PM</p>
+    <p>Sat – Sun: 1 PM – 12 AM</p>
+  </section>
+
+  <section class="location">
+    <h2>Find Us</h2>
+    <p>📍 Sip N Chat Café, Okara Cantonment</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.631692029791!2d73.45396747519012!3d30.811784274557563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392358b7aa2d7edb%3A0xa31e3f8bcd1f34c9!2sSip%20n%20Chat%20Cafe%20Okara%20Cantt!5e0!3m2!1sen!2s!4v1730400000000!5m2!1sen!2s"
+      allowfullscreen
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <a href="https://wa.me/923001234567" class="whatsapp" title="Chat with us on WhatsApp">💬</a>
+
+  <footer>
+    <p>© 2025 Sip N Chat Café • Okara Cantt</p>
+  </footer>
 </body>
 </html>
